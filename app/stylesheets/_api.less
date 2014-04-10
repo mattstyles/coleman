@@ -1,0 +1,41 @@
+@success: #29f86e;
+@failure: #f82e29;
+
+.api {
+
+    margin: 0;
+    padding: 50px;
+    font-size: 14px;
+
+    .statusbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+           -moz-transition: all 0.5s;
+                transition: all 0.5s;
+
+        &.success {
+            background: @success;
+            opacity: 1;
+        }
+
+        &.failure {
+            background: @failure;
+            opacity: 1;
+        }
+    }
+
+    .status {
+        &.success {
+            color: @success;
+        }
+
+        &.failure {
+            color: @failure;
+        }
+    }
+}

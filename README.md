@@ -28,7 +28,7 @@ Default port is __3000__.
 
 > “Extra prima good, Mr Coleman, sir!”
 
-Coleman is very own personal manbot, capable of fulfilling a number of roles and tasks with the utmost aplomb, tact and efficiency.
+Coleman is your very own personal manbot, capable of fulfilling a number of roles and tasks with the utmost aplomb, tact and efficiency.
 
 Simply start a conversation with Coleman and he will do his best to respond, learning where he can from whatever you choose to teach him.
 
