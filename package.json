@@ -1,0 +1,32 @@
+    {
+  "name": "coleman",
+  "version": "0.0.0",
+  "description": "Your very own personal manbot",
+  "main": "server.js",
+  "scripts": {
+    "start": "./dist/bin/coleman",
+    "test": "gulp test"
+  },
+  "author": "Matt Styles <matt@veryfizzyjelly.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-plumber": "^0.5.6",
+    "gulp-notify": "^1.2.4",
+    "gulp-uglify": "^0.2.1",
+    "gulp": "^3.6.0",
+    "gulp-browserify": "^0.5.0",
+    "rimraf": "^2.2.6",
+    "chai": "^1.9.1",
+    "gulp-util": "^2.2.14",
+    "gulp-mocha": "^0.4.1",
+    "gulp-rimraf": "0.0.9",
+    "minimist": "0.0.8",
+    "jshint-stylish": "^0.1.5",
+    "gulp-jshint": "^1.5.2",
+    "through2": "^0.4.1",
+    "gulp-concat": "^2.2.0",
+    "gulp-less": "^1.2.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-if": "0.0.5"
+  }
+}
