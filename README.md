@@ -18,7 +18,7 @@ Development,
 
 ```
 gulp -d
-DEBUG=express:* ./bin/dist/coleman
+DEBUG=coleman ./bin/dist/coleman
 ```
 
 Default port is __3000__.

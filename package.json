@@ -27,6 +27,7 @@
     "gulp-concat": "^2.2.0",
     "gulp-less": "^1.2.3",
     "gulp-rename": "^1.2.0",
-    "gulp-if": "0.0.5"
+    "gulp-if": "0.0.5",
+    "express": "^4.0.0"
   }
 }

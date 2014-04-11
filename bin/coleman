@@ -9,8 +9,8 @@
  *
  */
 
-var debug     = require('debug')('coleman');
-var app       = require('../server');
+var debug     = require( 'debug' )( 'coleman' );
+var app       = require( '../server' );
 
 app.set( 'port', process.env.PORT || 3000 );
 

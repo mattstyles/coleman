@@ -37,7 +37,6 @@ app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded() );
 app.use( cookieParser() );
 app.use( express.static( path.join( __dirname, 'app') ) );
-app.use( app.router );
 
 
 /**
@@ -52,6 +51,7 @@ app.get( '/api', routes.index );
 app.use( function( req, res, next ) {
     var err = new Error( 'Not Found' );
     err.status = 404;
+    res.status( err.status );
     next( err );
 });
 
@@ -63,7 +63,6 @@ app.use( function( req, res, next ) {
 // development - will print stacktrace
 if ( app.get( 'env' ).match( /dev/ ) ) {
     app.use( function( err, req, res, next ) {
-        res.status( err.status );
         res.render( 'error', {
             message: err.message,
             error: err
@@ -73,7 +72,6 @@ if ( app.get( 'env' ).match( /dev/ ) ) {
 
 // production - no stacktraces leaked to user
 app.use( function( err, req, res, next ) {
-    res.status( err.status );
     res.render( 'error', {
         message: err.message,
         error: {}
