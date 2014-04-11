@@ -1,0 +1,23 @@
+{
+  "name": "coleman",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mattstyles/coleman",
+  "authors": [
+    "Matt Styles <matt@veryfizzyjelly.com>"
+  ],
+  "description": "Your very own personal manbot",
+  "main": "dist/bin/coleman",
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-less": "*",
+    "lesshat": "~2.0.15"
+  }
+}

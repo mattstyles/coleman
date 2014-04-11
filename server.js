@@ -17,8 +17,6 @@ var http         = require('http'),
     cookieParser = require('cookie-parser'),
     bodyParser   = require('body-parser'),
 
-    routes       = require('./lib/routes'),
-
     app          = express();
 
 
@@ -42,7 +40,7 @@ app.use( express.static( path.join( __dirname, 'app') ) );
 /**
  * Set routes
  */
-app.get( '/api', routes.index );
+app.get( '/api', require( './lib/routes/api' ) );
 
 
 /**
