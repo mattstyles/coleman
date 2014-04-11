@@ -82,7 +82,7 @@ gulp.task( 'lint', function() {
     return gulp
         .src([
             './lib/*.js',
-            './app/scripts/*.js'
+            './public/scripts/*.js'
         ])
         .pipe( plumber({
             errorHandler: notify.onError( 'Script error: <%= error.message %>' )
@@ -104,17 +104,17 @@ gulp.task( 'lint', function() {
 gulp.task( 'styles', function() {
     return gulp
         .src([
-            './app/stylesheets/main.less'
+            './public/stylesheets/main.less'
         ])
         .pipe( plumber({
             errorHandler: notify.onError( 'Stylesheet error: <%= error.message %>' )
         }))
         .pipe( less({
             compress: !DEBUG,
-            paths: [ path.join( __dirname, './app/stylesheets' ) ]
+            paths: [ path.join( __dirname, './public/stylesheets' ) ]
         }))
         .pipe( concat( 'styles.css' ) )
-        .pipe( gulp.dest( './dist/app/styles/' ) );
+        .pipe( gulp.dest( './dist/public/styles/' ) );
 });
 
 
@@ -123,8 +123,8 @@ gulp.task( 'styles', function() {
  */
 gulp.task( 'copy', function() {
     return gulp
-        .src( './app/index.html' )
-        .pipe( gulp.dest( './dist/app/' ) );
+        .src( './public/index.html' )
+        .pipe( gulp.dest( './dist/public/' ) );
 });
 
 
@@ -135,8 +135,7 @@ gulp.task( 'copy-server', function() {
     return gulp
         .src([
             './bin/*',
-            './lib/**/*',
-            './server.js'
+            './lib/**/*'
         ], { base: './' } )
         .pipe( gulp.dest( './dist/' ) )
 })
@@ -149,7 +148,7 @@ gulp.task( 'copy-server', function() {
  */
 gulp.task( 'build', [ 'lint' ], function() {
     return gulp
-        .src( './app/scripts/main.js' )
+        .src( './public/scripts/main.js' )
         .pipe( plumber( {
             errorHandler: notify.onError( 'Build error: <%= error.message %>' )
         }))
@@ -162,7 +161,7 @@ gulp.task( 'build', [ 'lint' ], function() {
             // process.exit( -1 );
         })
         .pipe( gulpif( !DEBUG, uglify() ) )
-        .pipe( gulp.dest( './dist/app/scripts' ) );
+        .pipe( gulp.dest( './dist/public/scripts' ) );
 });
 
 

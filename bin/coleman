@@ -10,10 +10,12 @@
  */
 
 var debug     = require( 'debug' )( 'coleman' );
-var app       = require( '../server' );
+var coleman   = require( '../lib/coleman' );
 
-app.set( 'port', process.env.PORT || 3000 );
+coleman.app.set( 'port', process.env.PORT || 3000 );
 
-var server = app.listen( app.get( 'port' ), function() {
-  debug( 'Express server listening on port ' + server.address().port );
-});
+// var server = coleman.app.listen( coleman.app.get( 'port' ), function() {
+//   debug( 'Express server listening on port ' + server.address().port );
+// });
+
+coleman.start();

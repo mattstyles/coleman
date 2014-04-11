@@ -4,8 +4,9 @@
   "description": "Your very own personal manbot",
   "main": "server.js",
   "scripts": {
-    "start": "./dist/bin/coleman",
-    "test": "gulp test"
+    "start": "gulp && ./dist/bin/coleman",
+    "test": "gulp test",
+    "dev": "gulp -d && DEBUG=coleman ./dist/bin/coleman"
   },
   "author": "Matt Styles <matt@veryfizzyjelly.com>",
   "license": "ISC",
