@@ -31,6 +31,8 @@ input.addEventListener( 'keypress', function( event ) {
 body.addEventListener( 'click', function( event ) {
 
     input.focus();
-
-
 });
+
+
+
+console.log( 'public' );

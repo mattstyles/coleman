@@ -1,7 +1,7 @@
 .DS_Store
+modules
 node_modules
 bower_components
 dist
 target
 public/vendor
-
