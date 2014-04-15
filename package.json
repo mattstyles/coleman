@@ -32,7 +32,8 @@
     "gulp-concat": "^2.2.0",
     "gulp-less": "^1.2.3",
     "gulp-rename": "^1.2.0",
-    "gulp-if": "0.0.5"
+    "gulp-if": "0.0.5",
+    "es6-promise": "^0.1.1"
   },
   "dependencies": {
     "lodash-node": "^2.4.1",

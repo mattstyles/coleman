@@ -135,8 +135,7 @@ gulp.task( 'copy-server', function() {
     return gulp
         .src([
             './bin/*',
-            './lib/**/*',
-            './public-test/**/*'
+            './lib/**/*'
         ], { base: './' } )
         .pipe( gulp.dest( './dist/' ) )
 })
