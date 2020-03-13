@@ -25,7 +25,7 @@
     "gulp-util": "^2.2.14",
     "gulp-mocha": "^0.4.1",
     "gulp-rimraf": "0.0.9",
-    "minimist": "0.0.8",
+    "minimist": "1.2.5",
     "jshint-stylish": "^0.1.5",
     "gulp-jshint": "^1.5.2",
     "through2": "^0.4.1",
